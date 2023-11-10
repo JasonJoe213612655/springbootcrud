@@ -23,4 +23,6 @@ public class Book {
     @Column
     private String author;
 
+    @Column
+    private double price;
 }
