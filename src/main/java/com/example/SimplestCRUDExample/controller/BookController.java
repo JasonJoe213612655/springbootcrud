@@ -20,6 +20,7 @@ public class BookController {
 
     @GetMapping("/getAllBooks")
     public ResponseEntity<List<Book>> getAllBooks() {
+        System.out.println("new line added");
         try {
             List<Book> bookList = new ArrayList<>();
             bookRepository.findAll().forEach(bookList::add);
